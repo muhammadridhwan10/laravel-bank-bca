@@ -1,0 +1,36 @@
+{
+    "name": "ridhwan/laravel-bank-bca",
+    "description": "Laravel package for bank bca api",
+    "type": "library",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ridhwan\\LaravelBankBca\\Providers\\BcaServiceProvider"
+            ],
+            "aliases": {
+                "BcaAPI": "Ridhwan\\LaravelBankBca\\Facades\\BcaFacade"
+            }
+        }
+    },
+    "require": {
+        "php": ">=7.2|^8.0",
+        "ridhwan/response": "^1.0|dev-master",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ridhwan\\LaravelBankBca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ridhwan",
+            "email": "ridhwanmuhammad772@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
